@@ -17,6 +17,7 @@ export function add3(first: number, second: number, third: number): number {
     if (first > 0) total += first; // Add first if it's positive
     if (second > 0) total += second; // Add second if it's positive
     if (third > 0) total += third;
+
     return total;
 }
 
@@ -25,7 +26,7 @@ export function add3(first: number, second: number, third: number): number {
  * mark added to the end.
  */
 export function shout(message: string): string {
-    return "";
+    return message.toUpperCase() + "!";
 }
 
 /**
@@ -33,7 +34,7 @@ export function shout(message: string): string {
  * mark. Do not use an `if` statement in solving this question.
  */
 export function isQuestion(message: string): boolean {
-    return true;
+    return message.endsWith("?");
 }
 
 /**
